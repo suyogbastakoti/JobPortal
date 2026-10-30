@@ -5,10 +5,8 @@ const App = () => {
   return (
     <>
       <Navbar/>
-
-      <div>
-        <HomePage/>
-      </div>      
+      
+      <HomePage/>   
     </>
   );
 };
