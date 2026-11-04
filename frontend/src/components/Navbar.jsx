@@ -1,14 +1,23 @@
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className=" flex justify-between items-center px-7 py-3 border-b">
-      <div className="text-2xl font-bold text-blue-600">
-        SmartHire Hub
-      </div>
+      <Link to="/">
+        <div className="text-2xl font-bold text-blue-600">
+          SmartHire Hub
+        </div>
+      </Link>
+      
 
-      <div className="flex gap-2 underline text-gray-700">
-        <a href="#">Find Jobs</a>
-        <a href="#">Companies</a>
+      <div className="flex gap-5 text-gray-700">
+        <Link to="/" className="hover:text-blue-600">
+          Home
+        </Link>
+
+        <Link to="/jobs" className="hover:text-blue-600">
+          Find Jobs
+        </Link>
       </div>
 
       <div className="flex items-center gap-4">
