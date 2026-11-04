@@ -22,11 +22,15 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4">
         <button className="bg-blue-500 hover:bg-blue-600 text-white hover:cursor-pointer px-2 py-2 rounded-xl shadow border">
-            Login
+            <Link to="/login">
+              Login
+            </Link>
         </button>
 
         <button className="bg-blue-500 hover:bg-blue-600 text-white hover:cursor-pointer px-2 py-2 rounded-xl shadow border">
-            Sign Up
+            <Link to="/register">
+              SignUp
+            </Link>
         </button>
       </div>
 

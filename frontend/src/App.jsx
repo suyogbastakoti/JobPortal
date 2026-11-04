@@ -1,21 +1,29 @@
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import JobsPage from "./pages/JobsPage";
 import JobDetailsPage from "./pages/JobDetailsPage";
-import JobCard from "./components/JobCard";
-
-import {Routes, Route} from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const App = () => {
+  const location = useLocation();
+
+  const hideNavbar =
+    location.pathname === "/login" ||
+    location.pathname === "/register";
+
   return (
     <>
-      <Navbar/>
+      {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/jobs" element={<JobsPage/>} />
-        <Route path="/jobs/:id" element={<JobDetailsPage/>} />
-        <Route path="/jobcard" element={<JobCard/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/jobs/:id" element={<JobDetailsPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </>
   );
