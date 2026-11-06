@@ -6,6 +6,7 @@ import JobsPage from "./pages/JobsPage";
 import JobDetailsPage from "./pages/JobDetailsPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import JobSeekerDashboard from "./pages/JobSeekerDashboard";
 
 const App = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/jobs/:id" element={<JobDetailsPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/jobseeker/dashboard" element={<JobSeekerDashboard />} />
       </Routes>
     </>
   );
