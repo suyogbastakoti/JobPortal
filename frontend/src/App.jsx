@@ -7,6 +7,9 @@ import JobDetailsPage from "./pages/JobDetailsPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import JobSeekerDashboard from "./pages/JobSeekerDashboard";
+import MyApplications from "./pages/MyApplications";
+import JobseekerProfile from "./pages/JobseekerProfile";
+import JobseekerCV from "./pages/JobseekerCV";
 
 const App = () => {
   const location = useLocation();
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/jobseeker/dashboard" element={<JobSeekerDashboard />} />
+        <Route path="/jobseeker/applications" element={<MyApplications />} />
+        <Route path="/jobseeker/profile" element={<JobseekerProfile />} />
+        <Route path="/jobseeker/cv" element={<JobseekerCV />} />
       </Routes>
     </>
   );
