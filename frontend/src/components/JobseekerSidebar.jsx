@@ -9,6 +9,7 @@ import {
   IoCloudUploadOutline,
   IoMenuOutline,
   IoCloseOutline,
+  IoSearchOutline,
 } from "react-icons/io5";
 
 const JobseekerSidebar = () => {
@@ -39,6 +40,11 @@ const JobseekerSidebar = () => {
       name: "CV Management",
       path: "/jobseeker/cv",
       icon: IoCloudUploadOutline,
+    },
+    {
+      name: "Match My CV",
+      path: "/jobseeker/match-cv",
+      icon: IoSearchOutline,
     },
   ];
 

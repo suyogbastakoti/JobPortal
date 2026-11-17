@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { IoSearch, IoLocationOutline } from "react-icons/io5";
+import JobseekerSidebar from "../components/JobseekerSidebar";
 
 const JobsPage = () => {
   const [jobType, setJobType] = useState("");
 
   return (
-    <div className="px-6 py-12 md:px-16">
+    <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
+      <JobseekerSidebar />
+
+      <main className="flex-1 px-6 py-12 md:px-16">
 
       {/* Page Heading */}
       <div className="text-center mb-10">
@@ -118,6 +122,7 @@ const JobsPage = () => {
 
       </div>
 
+      </main>
     </div>
   );
 };

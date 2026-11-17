@@ -10,6 +10,7 @@ import JobSeekerDashboard from "./pages/JobSeekerDashboard";
 import MyApplications from "./pages/MyApplications";
 import JobseekerProfile from "./pages/JobseekerProfile";
 import JobseekerCV from "./pages/JobseekerCV";
+import MatchMyCV from "./pages/MatchMyCV";
 
 const App = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/jobseeker/applications" element={<MyApplications />} />
         <Route path="/jobseeker/profile" element={<JobseekerProfile />} />
         <Route path="/jobseeker/cv" element={<JobseekerCV />} />
+        <Route path="/jobseeker/match-cv" element={<MatchMyCV />} />
       </Routes>
     </>
   );
